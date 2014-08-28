@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2014-08-27T13:56:29Z</date>
+    <date>2014-08-28T07:06:33Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -40,6 +40,373 @@
                 </application>
             </applications>
             <items>
+                <item>
+                    <name>cpqDa6AccelBadDataTrap</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqDa6AccelBadDataTrap\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Cache Module Board Bad Data.&#13;
+This trap signifies that the agent has detected a cache module board that has lost backup power.  If data was being stored in the cache module memory when the server lost power, that data has been lost. The backup power source is indicated by cpqDaAccelBackupPowerSource. &#13;
+&#13;
+User Action: Verify that no data has been lost.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqida</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqDa6AccelBatteryFailed</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqDa6AccelBatteryFailed\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Cache Module Board Backup Power Source Failed.&#13;
+This trap signifies that the agent has detected a backup power source failure associated with the cache module board. The backup power source is indicated by cpqDaAccelBackupPowerSource. &#13;
+&#13;
+User Action: Replace the Backup Power Source.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqida</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqDa6AccelStatusChange</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqDa6AccelStatusChange\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Cache Module Board Status Change.&#13;
+This trap signifies that the agent has detected a change in the status of a cache module board.  The current status is represented by the variable cpqDaAccelStatus.&#13;
+&#13;
+User Action: &#13;
+&#13;
+If cpqDaAccelStatus is 'permDisabled(5)', you may need to replace the cache module board. &#13;
+&#13;
+If cpqDaAccelStatus is 'cacheModFlashMemNotAttached(6)', install the flash memory.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqida</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqDa6CntlrStatusChange</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqDa6CntlrStatusChange\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Controller Status Change.&#13;
+&#13;
+This trap signifies that the agent has detected a change in the status of a drive array controller.  The variable cpqDaCntlrBoardStatus indicates the current controller status. &#13;
+&#13;
+User Action: &#13;
+&#13;
+If cpqDaCntlrBoardStatus is 'generalFailure(3)', you may need to reboot the server or replace the controller. After the system is rebooted, check the variable cpqDaCntlrLastLockupCode for the controller&lt;92&gt;s last lockup code. &#13;
+&#13;
+If cpqDaCntlrBoardStatus is 'cableProblem(4)', check the cable connections between the controller and the storage system. &#13;
+&#13;
+If cpqDaCntlrBoardStatus is 'cacheModuleMissing(6)', the array controller is operating in an unsupported configuration and requires that a cache module be attached to the controller.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqida</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqDa6LogDrvStatusChange</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqDa6LogDrvStatusChange\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Logical Drive Status Change.&#13;
+This trap signifies that the agent has detected a change in the status of a drive array logical drive.  The variable cpqDaLogDrvStatus indicates the current logical drive status.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqida</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqDa7PhyDrvStatusChange</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqDa7PhyDrvStatusChange\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Physical Drive Status Change.&#13;
+This trap signifies that the agent has detected a change in the status of a drive array physical drive.  The variable cpaDaPhyDrvStatus indicates the current physical drive status. &#13;
+&#13;
+User Action: If cpaDaPhyDrvStatus is 'failed(3)', 'predictiveFailure(4)', 'ssdWearOut(8)', or 'notAuthenticated(9)', replace the drive.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqida</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqDa7SpareStatusChange</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqDa7SpareStatusChange\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Spare Drive Status Change.&#13;
+This trap signifies that the agent has detected a change in the status of a drive array spare drive.  The variable cpqDaSpareStatus indicates the current spare drive status. &#13;
+User Action: If cpqDaSpareStatus is 'failed(3)', replace the drive.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqida</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqDaPhyDrvSSDWearStatusChange</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqDaPhyDrvSSDWearStatusChange\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Solid State Disk Wear Status Change.&#13;
+This trap signifies that the agent has detected a change in the SSD wear status of a drive array physical drive.  The variable cpqDaPhyDrvSSDWearStatus indicates the current SSD wear status. &#13;
+User Action: If cpqDaPhyDrvSSDWearStatus is 'ssdWearOut(6)', replace the drive.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqida</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
                 <item>
                     <name>cpqHe3FltTolFanDegraded</name>
                     <type>17</type>
@@ -1012,6 +1379,525 @@ User Action: Replace the faulty memory.</description>
                     </applications>
                     <valuemap/>
                 </item>
+                <item>
+                    <name>cpqIdeAtaDiskStatusChange</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqIdeAtaDiskStatusChange\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>ATA Disk Status Change.&#13;
+This trap signifies that the agent has detected a change in the status of an ATA disk drive.  The variable cpqIdeAtaDiskStatus indicates the current disk drive status.&#13;
+&#13;
+User Action: If cpqIdeAtaDiskStatus is 'smartError(3)', 'failed(4)' or 'ssdWearOut(5)' replace the drive.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqide</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqNic3ConnectivityLost</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqNic3ConnectivityLost\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This trap will be sent any time the status of a logical adapter changes to the Failed condition.  This occurs when the adapter in a single adapter configuration fails, or when the last adapter in a redundant configuration fails. This can be caused by loss of link due to a cable being removed from the adapter or the Hub or Switch.  Internal adapter, Hub, or Switch failures can also cause this condition. &#13;
+&#13;
+User Action: Check the cables to the adapter and the Hub or Switch.  If no cable problems are found, the adapter, Hub, or Switch may need replacement.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqnic</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqNic3ConnectivityRestored</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqNic3ConnectivityRestored\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>This trap will be sent any time connectivity is restored to a logical adapter.  This occurs when the physical adapter in a single adapter configuration returns to the OK condition or at least one physical adapter in a logical adapter group returns to the OK condition. This can be caused by replacement of a faulty cable or re-attaching a cable that was unplugged. &#13;
+&#13;
+User Action: None required.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqnic</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqSasPhyDrvStatusChange</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqSasPhyDrvStatusChange\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Physical Drive Status Change.&#13;
+The Storage Agent has detected a change in the status of a SAS or SATA physical drive.  The current physical drive status is indicated in the cpqSasPhyDrvStatus variable. &#13;
+&#13;
+User Action: If cpqSasPhyDrvStatus is 'predictiveFailure(3)', 12 'failed(5)', 'ssdWearOut(10)' or 'notAuthenticated(12)', replace the drive.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqscsi</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqSm2SecurityOverrideDisengaged</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqSm2SecurityOverrideDisengaged\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Security Override Disengaged.&#13;
+The Remote Insight/ Integrated Lights-Out firmware has detected the security override jumper has been toggled to the disengaged position.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqsm2</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqSm2SecurityOverrideEngaged</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqSm2SecurityOverrideEngaged\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Security Override Engaged.&#13;
+The Remote Insight/ Integrated Lights-Out firmware has detected the security override jumper has been toggled to the engaged position.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqsm2</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqSm2SelfTestError</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqSm2SelfTestError\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Remote Insight/ Integrated Lights-Out Self Test Error.&#13;
+The Remote Insight/ Integrated Lights-Out firmware has detected a Remote Insight self test error.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqsm2</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqSm2ServerPowerOff</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqSm2ServerPowerOff\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>The server has been powered off. This will be sent once the server has been powered off, either by OS, or the power button.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqsm2</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqSm2ServerPowerOn</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqSm2ServerPowerOn\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>The server has been powered on. This will be sent once a server power on transition has occurred.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqsm2</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqSm2ServerPowerOnFailure</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqSm2ServerPowerOnFailure\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>A request was made to power on the server, however the server could not be powered on due to a failure condition.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqsm2</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqSm2ServerReset</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqSm2ServerReset\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Server Reset Detected.&#13;
+The Remote Insight/ Integrated Lights-Out firmware has detected a server reset.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqsm2</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>cpqSm2UnauthorizedLoginAttempts</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap[&quot;\bcpqSm2UnauthorizedLoginAttempts\b&quot;]</key>
+                    <delay>0</delay>
+                    <history>21</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Remote Insight/ Integrated Lights-Out Unauthorized Login Attempts.&#13;
+The Remote Insight/ Integrated Lights-Out firmware has detected unauthorized login attempts.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>cpqsm2</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
             </items>
             <discovery_rules/>
             <macros/>
@@ -1019,4 +1905,89 @@ User Action: Replace the faulty memory.</description>
             <screens/>
         </template>
     </templates>
+    <triggers>
+        <trigger>
+            <expression>(({-HP iLo4:snmptrap[&quot;\bcpqSm2SelfTestError\b&quot;].iregexp(\bcpqSm2SelfTestError\b)})#0)</expression>
+            <name>Integrated Lights-Out Self Test Error.</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Remote Insight/ Integrated Lights-Out Self Test Error.&#13;
+The Remote Insight/ Integrated Lights-Out firmware has detected a Remote Insight self test error.</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>(({-HP iLo4:snmptrap[&quot;\bcpqSm2SecurityOverrideDisengaged\b&quot;].iregexp(\bcpqSm2SecurityOverrideDisengaged\b)})#0)</expression>
+            <name>Security Override Disengaged</name>
+            <url/>
+            <status>0</status>
+            <priority>1</priority>
+            <description>Security Override Disengaged.&#13;
+The Remote Insight/ Integrated Lights-Out firmware has detected the security override jumper has been toggled to the disengaged position.</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>(({-HP iLo4:snmptrap[&quot;\bcpqSm2SecurityOverrideEngaged\b&quot;].iregexp(\bcpqSm2SecurityOverrideEngaged\b)})#0)</expression>
+            <name>Security Override Engaged</name>
+            <url/>
+            <status>0</status>
+            <priority>1</priority>
+            <description>Security Override Engaged.&#13;
+The Remote Insight/ Integrated Lights-Out firmware has detected the security override jumper has been toggled to the engaged position.</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>(({-HP iLo4:snmptrap[&quot;\bcpqSm2ServerPowerOnFailure\b&quot;].iregexp(\bcpqSm2ServerPowerOnFailure\b)})#0)</expression>
+            <name>Server could not be powered on due to a failure condition</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>A request was made to power on the server, however the server could not be powered on due to a failure condition.</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>(({-HP iLo4:snmptrap[&quot;\bcpqSm2ServerPowerOff\b&quot;].iregexp(\bcpqSm2ServerPowerOff\b)})#0)</expression>
+            <name>Server powered off</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>The server has been powered off. This will be sent once the server has been powered off, either by OS, or the power button.</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>(({-HP iLo4:snmptrap[&quot;\bcpqSm2ServerPowerOn\b&quot;].iregexp(\bcpqSm2ServerPowerOn\b)})#0)</expression>
+            <name>Server powered on</name>
+            <url/>
+            <status>0</status>
+            <priority>1</priority>
+            <description>The server has been powered on. This will be sent once a server power on transition has occurred.</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>({-HP iLo4:snmptrap[&quot;\bcpqSm2ServerReset\b&quot;].iregexp(\bcpqSm2ServerReset\b)})#0</expression>
+            <name>Server Reset Detected</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>Server Reset Detected</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>(({-HP iLo4:snmptrap[&quot;\bcpqSm2UnauthorizedLoginAttempts\b&quot;].iregexp(\bcpqSm2UnauthorizedLoginAttempts\b)})#0)</expression>
+            <name>Unauthorized Login Attempts</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>The Remote Insight/ Integrated Lights-Out firmware has detected unauthorized login attempts.</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+    </triggers>
 </zabbix_export>
